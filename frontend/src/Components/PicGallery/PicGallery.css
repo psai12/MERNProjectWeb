@@ -1,0 +1,31 @@
+.PicGallery
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    height:auto;
+    margin-bottom:150px;
+}
+.SectionOne
+{
+    width:25%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.SectionOne h4
+{
+    color: #242424ad;
+    font-weight:500;
+    margin-top: 4px;
+}
+.SectionOne h5
+{
+    margin-top: -20px;
+    color: #242424ad;
+    font-weight:300;
+    text-align: center;
+}
