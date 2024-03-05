@@ -1,0 +1,33 @@
+.FooterContainer{
+    background-color: #ffcece;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.FooterContainer .SocialLinks
+{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:20%;
+}
+.FooterContainer .MenuFooter
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 40%;
+}
+.FooterContainer img
+{
+    filter: invert(100);
+}
+.FooterContainer h6
+{
+    color: white;
+    font-size:17px;
+    margin-top:5px;
+}

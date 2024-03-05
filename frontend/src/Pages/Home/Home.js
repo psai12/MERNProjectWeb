@@ -12,6 +12,7 @@ import img3 from '../../Assets/3.jpg';
 import img4 from '../../Assets/4.jpg';
 import img5 from '../../Assets/5.jpg';
 import img6 from '../../Assets/6.jpg';
+import { Footer } from "../../Components/Footer/Footer";
 
 function Home()
 {
@@ -33,6 +34,7 @@ function Home()
         </div>
         <button type="button" className="Order">Order Online</button>
        </div>
+       <Footer/>
     </div>
 }
 
