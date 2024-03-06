@@ -45,7 +45,12 @@ function Catering()
         <div className='flexVertical left'>
          <label>Delivery Required?</label>
          <input type='checkbox' className='VerticalGap'/>
+         <input type='checkbox' className='VerticalGap'/>
         </div>
+        <div className='Section'>
+         <input type='text' placeholder='Notes' className='notes'/>
+        </div>
+        <button className='Submit'>Submit</button>
       </div>
       <Footer/>
     </div>
