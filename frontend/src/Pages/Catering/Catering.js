@@ -14,9 +14,8 @@ function Catering()
       <div className='Section'>
         <input type='text' placeholder='First Name'/>
         <input type='text' placeholder='Last Name'/>
-
       </div>
-      <div className='Section'>
+        <div className='Section'>
          <input type='text' placeholder='Email'/>
         </div>
         <div className='Section'>

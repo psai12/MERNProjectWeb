@@ -8,9 +8,9 @@ function Footer()
 return(
     <div className='FooterContainer'>
        <div className='SocialLinks'>
-           <img src={facebook} width="40" height="40"/>
-           <img src={Instagram} width="40" height="40"/>
-           <img src={LinkedIn} width="40" height="40"/>
+           <img src={facebook} width="40" height="40" onClick={()=>{window.location.href=`http://facebook.com`}}/>
+           <img src={Instagram} width="40" height="40" onClick={()=>{window.location.href=`http://Instagram.com`}}/>
+           <img src={LinkedIn} width="40" height="40" onClick={()=>{window.location.href=`http://LinkedIn.com`}}/>
        </div>
        <div className='MenuFooter'>
          <h5>CONTACT US</h5>

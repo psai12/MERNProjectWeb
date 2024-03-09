@@ -1,0 +1,33 @@
+.RegisterContainer
+{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+.RegisterForm
+{
+
+    display: flex;
+    width:500px;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.203);
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:5px;
+}
+.RegisterForm button
+{
+    width:100px;
+    height:40px;
+    border: none;
+    border-radius:3px;
+    background-color:#64c6cb70;
+    font-weight:600;
+}

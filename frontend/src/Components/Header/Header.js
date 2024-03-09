@@ -1,9 +1,33 @@
 import './Header.css';
 import ice from '../../Assets/icecream.png';
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 function Header()
 {
-return(
+  const currentLocation=useLocation();
+  
+  const [checkName,setName]=useState("REGISTER");
+  const [checkPath,setPath]=useState("/Login");
+
+  useEffect(()=>{checkLocation()},[]);
+
+  const checkLocation=()=>{
+    if(currentLocation.pathname=="/Register")
+      { 
+        console.log(currentLocation.pathname);
+        setName('LOGIN');
+        setPath('/Login');
+     }
+    else
+    {
+      console.log(currentLocation.pathname);
+        setName('REGISTER');
+        setPath('/Register');
+    }
+  }
+
+ return(
     <div className='HeaderContainer'>
       <div className='NavContainer'>
         <h6 className='MenuHeader'>MENU
@@ -20,7 +44,7 @@ return(
         <h6 onClick={()=>{window.location.href="/Catering"}}>CATERING</h6>
         <img src={ice} width='100' height='100' onClick={()=>{window.location.href="/"}}/>
         <h6>SOCIAL</h6>
-        <h6>FRANCHISING</h6>
+        <h6 onClick={()=>{window.location.href=`${checkPath}`}}>{checkName}</h6>
       </div>
     </div>);
 }
