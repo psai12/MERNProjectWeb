@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c6ea1668.css",
+    "main.js": "/static/js/main.8a13aec1.js",
+    "static/media/cake6.png": "/static/media/cake6.244e54a303f38967a999.png",
+    "static/media/icecream.png": "/static/media/icecream.864d93eb668847899ba1.png",
+    "static/media/cake3.jpg": "/static/media/cake3.5df134ea4579d5693178.jpg",
+    "static/media/cake5.jpg": "/static/media/cake5.face9babb8a170646bd2.jpg",
+    "static/media/cake4.jpg": "/static/media/cake4.04cac80dff9f1fb7cc39.jpg",
+    "static/media/cake2.jpg": "/static/media/cake2.6db945caf8c18fc83f96.jpg",
+    "static/media/cake1.jpg": "/static/media/cake1.48f6bdcb5d21e4a407c9.jpg",
+    "static/media/6.jpg": "/static/media/6.edce4e851d294e1dd736.jpg",
+    "static/media/1.jpg": "/static/media/1.7c1b8a427dcf520612c9.jpg",
+    "static/media/5.jpg": "/static/media/5.122e6dde55f0aa0e578c.jpg",
+    "static/media/2.jpg": "/static/media/2.f6c74ecc429766dc8400.jpg",
+    "static/media/4.jpg": "/static/media/4.6f63b085f1dfcdb18f05.jpg",
+    "static/media/3.jpg": "/static/media/3.b992c4db467d4e860c79.jpg",
+    "static/media/Instagram.png": "/static/media/Instagram.80ba6e0cea0ba8c9a54e.png",
+    "static/media/linkedIn.png": "/static/media/linkedIn.4aa21bd500dd39b7377b.png",
+    "static/media/facebook.png": "/static/media/facebook.fd6a862bfbd137ede25d.png",
+    "static/media/cakes.png": "/static/media/cakes.a146136bca19b76dfdb4.png",
+    "static/media/texture.jpg": "/static/media/texture.cd875f2e189bfd7c7114.jpg",
+    "index.html": "/index.html",
+    "main.c6ea1668.css.map": "/static/css/main.c6ea1668.css.map",
+    "main.8a13aec1.js.map": "/static/js/main.8a13aec1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6ea1668.css",
+    "static/js/main.8a13aec1.js"
+  ]
+}
