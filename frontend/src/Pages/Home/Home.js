@@ -22,17 +22,26 @@ function Home()
         <img src={texture} width="100%" height="100%" className="texture"/>
         <img src={cones} width="800" height="200" className="logo"/>
         <div className="Gallery">
-        <PicGallery prop1={{img:img1,title:"BANGIN' BROWNIE",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble"}}
-         prop2={{img:img2,title:"BIRTHDAY CAKE",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble"}}
-         prop3={{img:img3,title:"BOUNTY KILLAH",description:"Coconut soft serve ice cream, shredded toasted coconut, dark chocolate sauce"}}/>
-        <PicGallery prop1={{img:img4,title:"COOKIES & CREAM",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble"}}
-         prop2={{img:img5,title:"HELLA HAZELNUT",description:"Chocolate soft serve ice cream, hazelnut-chocolate sauce, wafer cookies, Corn Flakes, toasted pistachios"}}
-         prop3={{img:img6,title:"KRUSTY THE CONE",description:"Vanilla soft serve ice cream, cotton candy, cotton candy sauce, rainbow sprinkles"}}/>
-         <PicGallery prop1={{img:img4,title:"COOKIES & CREAM",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble"}}
-         prop2={{img:img5,title:"HELLA HAZELNUT",description:"Chocolate soft serve ice cream, hazelnut-chocolate sauce, wafer cookies, Corn Flakes, toasted pistachios"}}
-         prop3={{img:img6,title:"KRUSTY THE CONE",description:"Vanilla soft serve ice cream, cotton candy, cotton candy sauce, rainbow sprinkles"}}/>
+        <PicGallery prop1={{img:img1,title:"BANGIN' BROWNIE",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble",
+         id:"BANGIN"}}
+         prop2={{img:img2,title:"BIRTHDAY CAKE",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble",
+         id:"BIRTHDAY"}}
+         prop3={{img:img3,title:"BOUNTY KILLAH",description:"Coconut soft serve ice cream, shredded toasted coconut, dark chocolate sauce",
+         id:"BOUNTY"}}/>
+        <PicGallery prop1={{img:img4,title:"COOKIES & CREAM",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble",
+        id:"COOKIES"}}
+         prop2={{img:img5,title:"HELLA HAZELNUT",description:"Chocolate soft serve ice cream, hazelnut-chocolate sauce, wafer cookies, Corn Flakes, toasted pistachios",
+         id:"HELLA"}}
+         prop3={{img:img6,title:"KRUSTY THE CONE",description:"Vanilla soft serve ice cream, cotton candy, cotton candy sauce, rainbow sprinkles",
+         id:"KRUSTY"}}/>
+         <PicGallery prop1={{img:img4,title:"COOKIES & CREAM",description:"Chocolate soft serve ice cream, caramel, chocolate sauce, brownie bits, chocolate cookie crumble",
+         id:"COOKIES"}}
+         prop2={{img:img5,title:"HELLA HAZELNUT",description:"Chocolate soft serve ice cream, hazelnut-chocolate sauce, wafer cookies, Corn Flakes, toasted pistachios"
+         , id:"HELLA"}}
+         prop3={{img:img6,title:"KRUSTY THE CONE",description:"Vanilla soft serve ice cream, cotton candy, cotton candy sauce, rainbow sprinkles",
+         id:"KRUSTY" }}/>
         </div>
-        <button type="button" className="Order">Order Online</button>
+        <button type="button" className="Order" onClick={()=>{window.location.href="/OrderOnline"}}>Order Online</button>
        </div>
        <Footer/>
     </div>

@@ -49,7 +49,7 @@ function Catering()
         <div className='Section'>
          <input type='text' placeholder='Notes' className='notes'/>
         </div>
-        <button className='Submit'>Submit</button>
+        <button className='Submit' onClick={()=>{alert("Form Submitted!")}}>Submit</button>
       </div>
       <Footer/>
     </div>

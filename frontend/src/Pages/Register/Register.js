@@ -96,8 +96,9 @@ function Register()
          <input type="email" placeholder='Email' onChange={(e)=>{setEmail(e.target.value)}} required/>
          <input type="password" placeholder='Password' onChange={(e)=>{setPassword(e.target.value)}} required/>
          <input type="password" placeholder='ConfirmPassword' onChange={(e)=>{setCPassword(e.target.value)}} required/>
-         <text style={{color:"red",fontSize:"12px"}}>{error}</text>
+         <h6 style={{color:"red",fontSize:"12px"}}>{error}</h6>
          <button onClick={()=>saveRegisterData()}>Submit</button>
+         <button onClick={()=>window.location.href="/Login"}>Login</button>
       </div>
       <Footer/>
     </div>

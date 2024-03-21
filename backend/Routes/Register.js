@@ -16,9 +16,37 @@ router.get("/getcookies",(req,res)=>{
 });
 
 router.get("/removeCookies",(req,res)=>{
-  console.log("cookies");
+  try
+  {
     res.cookie("username","",{expires:new Date(Date.now()),httpOnly:true});
-    res.send({msg:"cookies removed"});
+    res.send({msg:"cookies removed",cookies:true});
+  }
+    catch(err)
+    {
+      res.send({msg:"cookies removed",cookies:false});
+    }
+});
+
+router.post('/login',async (req,res)=>{
+  const body=req.body;
+ console.log(body);
+  try
+  {
+    let user=await registerModel.findOne({email:body.email});
+    if(user)
+    {
+          res.cookie("username",body.email,{httpOnly:true,maxAge:9000000});
+          res.send({msg:"Registered!",login:true});
+    }
+    else
+    {
+      res.send({err:"Email not registered!",login:false});
+    }
+  }
+  catch(err)
+  {
+    res.send({err:err,login:false});
+  }
 });
 
 router.post('/register',async(req,res)=>{

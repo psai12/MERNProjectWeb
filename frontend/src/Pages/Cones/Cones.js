@@ -34,7 +34,7 @@ function Cones()
          prop2={{img:img5,title:"HELLA HAZELNUT",description:"Chocolate soft serve ice cream, hazelnut-chocolate sauce, wafer cookies, Corn Flakes, toasted pistachios"}}
          prop3={{img:img6,title:"KRUSTY THE CONE",description:"Vanilla soft serve ice cream, cotton candy, cotton candy sauce, rainbow sprinkles"}}/>
         </div>
-        <button type="button" className="Order">Order Online</button>
+        <button type="button" className="Order" onClick={()=>{window.location.href="/OrderOnline"}}>Order Online</button>
        </div>
          <Footer/>
         </div>

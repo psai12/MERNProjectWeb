@@ -2,7 +2,7 @@
 {
     width:100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     height: auto;
@@ -12,8 +12,8 @@
 
     display: flex;
     width:500px;
-    height: 300px;
-    justify-content: space-evenly;
+    height: auto;
+    justify-content: center;
     align-items:center;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.16);
@@ -21,6 +21,10 @@
     margin-top:50px;
     margin-bottom:50px;
     border-radius:5px;
+}
+.RegisterForm input
+{
+    margin-top: 10px;
 }
 .RegisterForm button
 {
@@ -30,4 +34,6 @@
     border-radius:3px;
     background-color:#64c6cb70;
     font-weight:600;
+    margin-top:10px;
+    margin-bottom:10px;
 }
