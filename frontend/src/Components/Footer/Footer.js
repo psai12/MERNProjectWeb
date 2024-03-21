@@ -2,6 +2,7 @@ import './Footer.css';
 import facebook from '../../Assets/facebook.png';
 import Instagram from '../../Assets/Instagram.png';
 import LinkedIn from '../../Assets/linkedIn.png';
+import React from 'react';
 
 function Footer()
 {

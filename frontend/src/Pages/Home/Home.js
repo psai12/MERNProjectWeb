@@ -13,6 +13,7 @@ import img4 from '../../Assets/4.jpg';
 import img5 from '../../Assets/5.jpg';
 import img6 from '../../Assets/6.jpg';
 import { Footer } from "../../Components/Footer/Footer";
+import React from "react";
 
 function Home()
 {

@@ -2,7 +2,6 @@ import { Footer } from '../../Components/Footer/Footer';
 import { Header } from '../../Components/Header/Header';
 import './Cones.css';
 
-
 import img1 from '../../Assets/1.jpg';
 import img2 from '../../Assets/2.jpg';
 import img3 from '../../Assets/3.jpg';
@@ -14,6 +13,7 @@ import PicGallery from '../../Components/PicGallery/PicGallery.js';
 
 import texture from '../../Assets/texture.jpg';
 import cones from '../../Assets/Cones.png';
+import React from 'react';
 
 function Cones()
 {

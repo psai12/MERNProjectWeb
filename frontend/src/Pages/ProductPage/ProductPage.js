@@ -1,6 +1,7 @@
 import { Footer } from '../../Components/Footer/Footer';
 import { Header } from '../../Components/Header/Header';
 import './ProductPage.css';
+import React from 'react';
 
 function ProductPage({prop})
 {

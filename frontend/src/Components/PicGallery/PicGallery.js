@@ -1,3 +1,4 @@
+import React from 'react';
 import './PicGallery.css';
 
 function PicGallery({prop1,prop2,prop3})

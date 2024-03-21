@@ -4,7 +4,7 @@ import react, { useState } from 'react';
 import {Footer} from '../../Components/Footer/Footer.js';
 import { url } from '../../Utils/Links.js';
 import  {useNavigate}  from 'react-router-dom';
-
+import React from 'react';
 function Register()
 {
     let navigate = useNavigate();

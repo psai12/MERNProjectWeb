@@ -2,7 +2,6 @@ import { Footer } from '../../Components/Footer/Footer';
 import { Header } from '../../Components/Header/Header';
 import './Cakes.css';
 
-
 import  cake1 from '../../Assets/cake1.jpg';
 import cake2 from '../../Assets/cake2.jpg';
 import cake3 from '../../Assets/cake3.jpg';
@@ -14,6 +13,7 @@ import PicGallery from '../../Components/PicGallery/PicGallery.js';
 
 import texture from '../../Assets/texture.jpg';
 import cakes from '../../Assets/cakes.png';
+import React from 'react';
 
 function Cakes()
 {

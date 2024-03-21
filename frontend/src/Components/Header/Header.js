@@ -1,7 +1,7 @@
 import './Header.css';
 import ice from '../../Assets/icecream.png';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { url } from '../../Utils/Links.js';
 import { Logout } from '../../API/Api.js';
 
