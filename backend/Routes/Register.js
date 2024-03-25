@@ -71,7 +71,7 @@ router.post('/register',async(req,res)=>{
         let userCreated= registerModel.create({name:name,email:email,password:hashPassword});
         if(userCreated)
         {
-          res.cookie("username",body.email,{httpOnly:true,maxAge:9000000});
+          res.cookie("username",email,{httpOnly:true,maxAge:9000000});
           res.send({msg:"Registered!"});
         }
       
