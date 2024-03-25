@@ -1,4 +1,4 @@
-const url="https://mernprojectweb-1.onrender.com"
+const url="https://mernprojectweb.onrender.com"
 
 
 export {url};
