@@ -8,7 +8,7 @@ import cookieParser from 'cookie-parser';
 const app=express();
 
 app.use(cors({credentials:true,
-      origin: process.env.REACT_URL,
+      origin: "https://frontend-1nhd.onrender.com",
 
 }));
 
