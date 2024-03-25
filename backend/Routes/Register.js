@@ -1,7 +1,7 @@
 import express from 'express';
 import registerModel from '../Models/RegisterModel.js';
 const router=express.Router();
-
+const bcrypt=require("bcrypt");
 
 router.get("/getcookies",(req,res)=>{
   const user=req.cookies.username;
@@ -29,14 +29,21 @@ router.get("/removeCookies",(req,res)=>{
 
 router.post('/login',async (req,res)=>{
   const body=req.body;
- console.log(body);
   try
   {
     let user=await registerModel.findOne({email:body.email});
     if(user)
     {
-          res.cookie("username",body.email,{httpOnly:true,maxAge:9000000});
-          res.send({msg:"Registered!",login:true});
+      const compare=bcrypt.compare(body.password,user.password);
+      if(compare)
+      {
+        res.cookie("username",body.email,{httpOnly:true,maxAge:9000000});
+        res.send({msg:"Registered!",login:true});
+      }
+      else
+      {
+        res.send({msg:"Password not correct!",login:false});
+      }
     }
     else
     {
@@ -50,19 +57,18 @@ router.post('/login',async (req,res)=>{
 });
 
 router.post('/register',async(req,res)=>{
-  const body=req.body;
+  const {name,email,password}=req.body;
   try
   {
     let user=await registerModel.findOne({email:body.email});
-    console.log(user);
+    const hashPassword=await bcrypt.hash(password,10);
     if(user)
     {
         res.send({err:"Email already registered!"});
     }
     else
     {
-        let userCreated=new registerModel(body);
-        await userCreated.save();
+        let userCreated= registerModel.create({name:name,email:email,password:hashPassword});
         if(userCreated)
         {
           res.cookie("username",body.email,{httpOnly:true,maxAge:9000000});
