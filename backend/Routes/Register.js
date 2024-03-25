@@ -1,7 +1,7 @@
 import express from 'express';
 import registerModel from '../Models/RegisterModel.js';
 const router=express.Router();
-const bcrypt=require("bcrypt");
+import bcrypt from 'bcrypt';
 
 router.get("/getcookies",(req,res)=>{
   const user=req.cookies.username;
