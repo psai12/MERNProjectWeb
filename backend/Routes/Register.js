@@ -60,7 +60,7 @@ router.post('/register',async(req,res)=>{
   const {name,email,password}=req.body;
   try
   {
-    let user=await registerModel.findOne({email:body.email});
+    let user=await registerModel.findOne({email:email});
     const hashPassword=await bcrypt.hash(password,10);
     if(user)
     {
